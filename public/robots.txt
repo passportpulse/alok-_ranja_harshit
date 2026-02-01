@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://insurancebusiness.com/sitemap.xml
+
+# Block unnecessary files
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Allow important directories
+Allow: /courses/
+Allow: /pricing/
+Allow: /about/
+Allow: /contact/
+Allow: /faq/
+Allow: /privacy/
+Allow: /terms/
+
+# Crawl delay (optional)
+Crawl-delay: 1
