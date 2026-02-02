@@ -10,10 +10,10 @@ export default function HeroSection() {
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-5xl xl:text-6xl font-medium text-gray-700 leading-tight mb-6">
-            Financial Advisor & Insurance Agent Coaching in Jharkhand <br className="hidden md:inline"/>
-            {/* <span className="text-blue-600  ">
-              Consistently. Predictably. Profitably.
-            </span> */}
+            Financial Advisor & Insurance Agent  <br className="hidden md:inline"/>
+            <span className="text-blue-600  ">
+             Coaching in Jharkhand
+            </span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 max-w-2xl mb-10">
