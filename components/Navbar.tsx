@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,6 +13,9 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  // Check if we're on the apply page
+  const isApplyPage = pathname === '/apply'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,41 +44,48 @@ export default function Navbar() {
   return (
     <nav className={`bg-white shadow-lg transition-all duration-300 ${isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-xl' : ''}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img
-                src="/logo-b.png"
-                alt="Insurance Business Logo"
-                className="h-20 w-auto"
-              />
+              <img src="/logo-b.png" alt="Insurance Business Logo" className="h-12 w-auto" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`px-3 py-2  rounded-md text-base font-medium transition-colors ${
-                    pathname === item.href 
-                      ? 'text-blue-600 bg-blue-50' 
-                      : 'text-gray-700 hover:text-blue-600'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+          <div className="hidden md:flex items-center">
+            {isApplyPage ? (
+              // Show only About button on apply page
               <Link
-                href="/apply"
+                href="/about"
                 className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                Apply Now
+                About
               </Link>
-            </div>
+            ) : (
+              // Show full navigation on other pages
+              <>
+                <div className="items-center space-x-8">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={`text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                        item.href === pathname ? 'text-blue-600 bg-blue-50' : ''
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                <Link
+                  href="/apply"
+                  className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition-colors ml-8"
+                >
+                  Apply Now
+                </Link>
+              </>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -103,27 +114,39 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
+            {isApplyPage ? (
+              // Show only About button on apply page for mobile
               <Link
-                key={item.name}
-                href={item.href}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                  pathname === item.href 
-                    ? 'text-blue-600 bg-blue-50' 
-                    : 'text-gray-700 hover:text-blue-600'
-                }`}
+                href="/about"
+                className="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item.name}
+                About
               </Link>
-            ))}
-            <Link
-              href="/apply"
-              className="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Apply Now
-            </Link>
+            ) : (
+              // Show full navigation on other pages for mobile
+              <>
+                {navItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                      item.href === pathname ? 'text-blue-600 bg-blue-50' : ''
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <Link
+                  href="/apply"
+                  className="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Apply Now
+                </Link>
+              </>
+            )}
           </div>
         </div>
       )}
