@@ -97,7 +97,7 @@ export default function HeroSection() {
           {/* Main image with enhanced styling */}
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl"></div>
-            <div className="relative bg-white/90 backdrop-blur-sm ">
+            <div className="relative backdrop-blur-sm ">
               <img
                 src="/hero-insurance-agent.png"
                 alt="Insurance Agent Growth"
