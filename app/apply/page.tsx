@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Page() {
   return (
-    <main className="bg-[#F7FAFC] text-[#1A365D]">
+    <main className="bg-[#F7FAFC] leading-relaxed text-[#1A365D]">
 
       {/* ================= HERO ================= */}
       <section className="bg-white">
