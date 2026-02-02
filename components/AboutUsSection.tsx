@@ -104,7 +104,7 @@ export default function AboutUsSection() {
         </div>
 
         {/* RIGHT – STATS / TRUST CARDS */}
-        <div className="lg:sticky lg:top-16 h-fit">
+        <div className="lg:sticky lg:top-24 h-fit">
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               {

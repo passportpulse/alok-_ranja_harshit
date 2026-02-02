@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import CourseDetailsSection from "@/components/pages/CourseDetailsSection"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Courses - Insurance Business | Digital Client Acquisition Training",
@@ -13,7 +14,7 @@ export default function Courses() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100 py-20 md:py-28">
+          <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-100 py-20 md:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_40%)]" />
         
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,6 +30,14 @@ export default function Courses() {
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                 Transform your insurance business with proven online client acquisition strategies
               </p>
+              <div className="mt-8">
+                <Link
+                  href="/apply-now"
+                  className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-lg font-medium transition-colors inline-block"
+                >
+                  Apply Now
+                </Link>
+              </div>
             </div>
             
             {/* Right - Image */}

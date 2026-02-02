@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Pricing() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
@@ -63,6 +64,14 @@ export default function Pricing() {
                              Select the perfect plan that aligns with your business goals and accelerates your insurance career
 
               </p>
+              <div className="mt-8">
+                <Link
+                  href="/apply-now"
+                  className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-lg font-medium transition-colors inline-block"
+                >
+                  Apply Now
+                </Link>
+              </div>
             </div>
             
             {/* Right - Image */}
@@ -132,15 +141,16 @@ export default function Pricing() {
                     ))}
                   </ul>
                   
-                  <button
-                    className={`w-full py-4 px-8 rounded-xl font-bold text-lg transition-all duration-300 ${
+                  <Link
+                    href="/apply-now"
+                    className={`w-full py-4 px-8 rounded-xl font-bold text-lg transition-all duration-300 inline-block text-center ${
                       plan.popular
                         ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 shadow-lg'
                         : 'bg-gray-100 text-gray-900 hover:bg-gray-200 border-2 border-gray-200 hover:border-gray-300'
                     }`}
                   >
-                    {plan.popular ? 'Get Started Now' : 'Choose Plan'}
-                  </button>
+                    {plan.popular ? 'Apply Now' : 'Choose Plan'}
+                  </Link>
                 </div>
               </div>
             ))}
@@ -325,18 +335,18 @@ export default function Pricing() {
               Join thousands of insurance professionals who've transformed their careers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <Link
+                href="/apply-now"
                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
               >
-                Schedule Consultation
-              </a>
-              <a
+                Apply Now
+              </Link>
+              <Link
                 href="/courses"
                 className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-xl font-bold text-lg transition-colors"
               >
                 View Course Details
-              </a>
+              </Link>
             </div>
           </div>
         </div>

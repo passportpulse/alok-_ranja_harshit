@@ -21,7 +21,7 @@ export default function FinalCTASection() {
 
         {/* CTA BUTTON */}
         <a
-          href="/apply"
+          href="/apply-now"
           className="inline-flex items-center gap-3 rounded-2xl bg-orange-500 px-10 py-5 text-xl font-bold text-white shadow-2xl hover:bg-orange-600 transition"
         >
           👉 Join the Agent Growth System Today
