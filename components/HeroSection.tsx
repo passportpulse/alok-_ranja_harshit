@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.1),transparent_50%)]" />
       </div>
 
-      <div className="relative container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative container mx-auto px-6 flex flex-col-reverse lg:flex-row gap-16 items-center">
         
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left space-y-8">
@@ -23,7 +23,7 @@ export default function HeroSection() {
 
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold leading-tight">
-            <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 bg-clip-text text-transparent">
               Financial Advisor & Insurance Agent
             </span>
             <br className="hidden md:inline"/>
@@ -93,7 +93,7 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative hidden lg:block">
+        <div className="relative block">
           {/* Main image with enhanced styling */}
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl"></div>
