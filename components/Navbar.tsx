@@ -27,10 +27,12 @@ export default function Navbar() {
   }, [])
 
   const navItems = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '/' },  
+    { name: 'About Us', href: '/about' },
     { name: 'Courses', href: '/courses' },
     { name: 'Pricing', href: '/pricing' },
-    { name: 'About Us', href: '/about' },
+      { name: 'Blog', href: '/blog' },
+  
     { name: 'FAQ', href: '/faq' },
     { name: 'Contact', href: '/contact' },
   ]

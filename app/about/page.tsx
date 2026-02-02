@@ -91,7 +91,7 @@ export default function About() {
               <div className="relative">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8">
                   <img
-                    src="/about-team.png"
+                    src="/about-team.webp"
                     alt="Insurance business team working together"
                     className="w-full h-auto rounded-2xl object-cover"
                   />

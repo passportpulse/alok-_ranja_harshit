@@ -82,7 +82,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91-7004286232</p>
                   <p className="text-sm text-gray-500">Mon-Fri: 9AM-6PM IST</p>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">info@insurancebusiness.com</p>
+                  <p className="text-gray-600">alokbsk@gmail.com</p>
                   <p className="text-sm text-gray-500">We respond within 24 hours</p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Office</h3>
-                  <p className="text-gray-600">Kolkata</p>
+                  <p className="text-gray-600">Ranchi, Jharkhand</p>
                   <p className="text-sm text-gray-500">India</p>
                 </div>
               </div>
