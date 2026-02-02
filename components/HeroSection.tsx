@@ -10,16 +10,16 @@ export default function HeroSection() {
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-5xl xl:text-6xl font-medium text-gray-700 leading-tight mb-6">
-            Grow Your Insurance Business Online - <br className="hidden md:inline"/>
-            <span className="text-blue-600  ">
+            Financial Advisor & Insurance Agent Coaching in Jharkhand <br className="hidden md:inline"/>
+            {/* <span className="text-blue-600  ">
               Consistently. Predictably. Profitably.
-            </span>
+            </span> */}
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 max-w-2xl mb-10">
-            Learn proven digital systems to attract quality clients online
+           Learn How to Get Clients Online Ethically, 
             <span className="font-medium text-gray-700">
-              {" "}without cold calling, door knocking, or buying leads.
+              {" "}Consistently & Without Cold Calling
             </span>
           </p>
 

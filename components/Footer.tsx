@@ -7,9 +7,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">
-              Insurance Business
-            </h3>
+            <div className="mb-4">
+              <img
+                src="/logo-w.png"
+                alt="Insurance Business Logo"
+                className="h-36 w-auto"
+              />
+            </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Your trusted partner for comprehensive insurance solutions. We provide professional insurance services tailored to meet your specific needs.
             </p>

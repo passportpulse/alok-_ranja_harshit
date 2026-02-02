@@ -220,6 +220,86 @@ export default function About() {
         </div>
 
 
+        {/* FIN HEALTH COACHING SECTION */}
+        <div className="mb-20">
+          <div className="bg-gradient-to-br from-white to-blue-50 rounded-4xl p-12">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+                Financial Advisor & Insurance Agent Coaching in Jharkhand
+              </h2>
+              
+              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  <span className="font-bold text-blue-600">Fin Health</span> is a unique coaching platform that was made to help financial advisors and insurance agents achieve sustainable growth in the digitally dominant world of today.
+                </p>
+                
+                <p>
+                  Our Financial Advisor & Insurance Agent Coaching in Jharkhand is tailored for those professionals who want to <span className="font-semibold text-blue-600">attract quality clients online, win trust that lasts, and grow their advisory business</span> in an ethical and consistent manner.
+                </p>
+                
+                <p>
+                  Jharkhand community of insurance agents, mutual fund distributors, and financial planners is the one which keeps expanding rapidly. Yet, a great number of people in the sector are still heavily relying on referrals, walk-ins, or cold calling.
+                </p>
+                
+                <p>
+                  Fin Health is there to take you beyond these old-fashioned methods by offering you the <span className="font-semibold text-blue-600">step-by-step new online client acquisition systems</span> that are very easy, practical, and regulatory compliant.
+                </p>
+                
+                <p>
+                  Our coaching can serve the purposes of unlocking the potential of the two: newly licensed advisors as well as experienced professionals who want to raise the level of their practice to meet the needs of tomorrow.
+                </p>
+                
+                <p>
+                  One of the things that we work on at Fin Health is that you learn how to <span className="font-semibold text-blue-600">build a personal brand that is backed up by actions in real life</span> through our Financial Advisor & Insurance Agent Coaching in Jharkhand.
+                </p>
+                
+                <p>
+                  Additionally, you become master the usage of popular social platforms such as WhatsApp, Facebook, and LinkedIn for marketing and sales purposes, and most importantly how to effectively deliver your value proposition to potential clients.
+                </p>
+                
+                <p>
+                  The objective is not merely to get more leads but the right clientele those who trust you, and will stay with you in the long run.
+                </p>
+                
+                <p>
+                  Ethical and relationship-based approach. We firmly think that credible and relationship-based marketing supports value orientation and client trust.
+                </p>
+                
+                <p>
+                  Fin Health also runs <span className="font-semibold text-blue-600">free coaching programs</span> to help advisors. Such sessions equip you with the knowledge of online client acquisition and digital marketing strategies.
+                </p>
+              </div>
+              
+              {/* COACHING FEATURES */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
+                  <div className="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">🎯</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Quality Clients</h3>
+                  <p className="text-gray-600">Attract the right clients who trust you and stay long-term</p>
+                </div>
+                
+                <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
+                  <div className="h-12 w-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">💻</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Digital Systems</h3>
+                  <p className="text-gray-600">Step-by-step online client acquisition systems</p>
+                </div>
+                
+                <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
+                  <div className="h-12 w-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">🤝</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Ethical Approach</h3>
+                  <p className="text-gray-600">Relationship-based marketing that builds trust</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* ENHANCED CTA SECTION */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-4xl p-16 text-white shadow-2xl">

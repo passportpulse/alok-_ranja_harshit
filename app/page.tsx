@@ -8,8 +8,8 @@ import AboutUsSection from "@/components/AboutUsSection"
 import FinalCTASection from "@/components/FinalCTASection"
 
 export const metadata: Metadata = {
-  title: "Insurance Business - Digital Client Acquisition Training | Home",
-  description: "Transform your insurance business with proven digital client acquisition strategies. Learn from 34+ years experienced professional with multiple MDRT qualifications. Start attracting quality clients online today.",
+  title: "Fin Health | Financial Advisor & Insurance Agent Coaching in Jharkhand",
+  description: "Coaching for Financial Advisors & Insurance Agents in Jharkhand to get more clients online ethically, consistently, and profitably. Join free coaching now.",
   keywords: "insurance business, digital client acquisition, insurance training, MDRT qualification, insurance marketing, online insurance courses",
   openGraph: {
     title: "Insurance Business - Digital Client Acquisition Training",
