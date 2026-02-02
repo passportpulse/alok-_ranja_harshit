@@ -32,7 +32,7 @@ export default function Courses() {
               </p>
               <div className="mt-8">
                 <Link
-                  href="/apply-now"
+                  href="/apply"
                   className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-lg font-medium transition-colors inline-block"
                 >
                   Apply Now

@@ -69,7 +69,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/apply-now"
+                href="/apply"
                 className="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Apply Now
@@ -118,7 +118,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/apply"
               className="bg-blue-600 text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >

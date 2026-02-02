@@ -66,7 +66,7 @@ export default function Pricing() {
               </p>
               <div className="mt-8">
                 <Link
-                  href="/apply-now"
+                  href="/apply"
                   className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-lg font-medium transition-colors inline-block"
                 >
                   Apply Now
@@ -142,7 +142,7 @@ export default function Pricing() {
                   </ul>
                   
                   <Link
-                    href="/apply-now"
+                    href="/apply"
                     className={`w-full py-4 px-8 rounded-xl font-bold text-lg transition-all duration-300 inline-block text-center ${
                       plan.popular
                         ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 shadow-lg'
@@ -336,7 +336,7 @@ export default function Pricing() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/apply-now"
+                href="/apply"
                 className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
               >
                 Apply Now
