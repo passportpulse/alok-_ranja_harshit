@@ -28,94 +28,91 @@ export default function Page() {
   return (
     <main className="bg-[#F7FAFC] leading-relaxed text-[#1A365D]">
 
-{/* ================= LONG BENTO HERO ================= */}
-<section className="bg-white px-6">
-  <div className="container mx-auto py-20">
-    <div className="relative overflow-hidden rounded-[32px] bg-blue-900  px-14 py-16">
+<section className="relative h-[85vh] min-h-[650px] w-full overflow-hidden">
 
-      {/* GRID BACKGROUND */}
-      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#ffffff22_1px,transparent_1px),linear-gradient(to_bottom,#ffffff22_1px,transparent_1px)] bg-[size:48px_48px]" />
+  {/* BACKGROUND IMAGE */}
+  <img
+    src="/hero-insurance-agent.png"
+    alt="Advisor working online"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-      <div className="relative grid lg:grid-cols-2 gap-16 items-center">
+  {/* WHITE OVERLAY */}
+  <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/20" />
 
-        {/* LEFT CONTENT — YOUR COPY */}
-        <div>
-          <span className="inline-block mb-6 px-5 py-2 rounded-full text-sm font-medium bg-white/10 text-blue-300">
-            For Insurance & Financial Advisors
-          </span>
+  {/* SUBTLE GRID */}
+  <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#00000014_1px,transparent_1px),linear-gradient(to_bottom,#00000014_1px,transparent_1px)] bg-[size:48px_48px]" />
 
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-white leading-tight">
-            Stop Knocking. <br />
-            <span className="text-blue-400">Start Scaling.</span>
-          </h1>
+  {/* CONTENT */}
+  <div className="relative z-10 container mx-auto h-full px-6 flex items-center">
+    <div className="max-w-xl">
 
-          <p className="mt-6 text-lg text-gray-300 max-w-xl">
-            Replace door-to-door selling with a predictable online system
-            that brings serious, ready-to-buy clients — on autopilot.
-          </p>
+      <span className="inline-block mb-6 px-5 py-2 rounded-full text-sm font-medium bg-blue-100 text-blue-700">
+        For Insurance & Financial Advisors
+      </span>
 
-          {/* BADGES (same layout, neutral info style) */}
-          <div className="mt-8 flex flex-wrap gap-4">
-            <span className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-xl text-sm">
-              <Rocket className="w-4 h-4" />
-              Predictable Leads
-            </span>
-            <span className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-xl text-sm">
-              <Users className="w-4 h-4" />
-              High-Intent Clients
-            </span>
-            <span className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-xl text-sm">
-              <Settings className="w-4 h-4" />
-              Automated System
-            </span>
-          </div>
+      <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight">
+        Stop Knocking. <br />
+        <span className="text-blue-700">Start Scaling.</span>
+      </h1>
 
-          {/* CTA */}
-          <button className="mt-10 bg-blue-500 hover:bg-blue-600 transition text-white px-10 py-4 rounded-xl font-semibold shadow-xl">
-            Get Free Access Today
-          </button>
+      <p className="mt-6 text-lg text-gray-700 max-w-xl">
+        Replace door-to-door selling with a predictable online system
+        that brings serious, ready-to-buy clients — on autopilot.
+      </p>
 
-          <p className="mt-3 text-sm text-gray-400">
-            No credit card required
-          </p>
-        </div>
-
-        {/* RIGHT IMAGE CARD */}
-        <div className="relative lg:mx-0">
-          <div className="relative rounded-3xl overflow-hidden  group">
-            <img
-              src="/hero-insurance-agent.png"
-              alt="Advisor working online"
-              className="w-full h-full object-cover transition duration-700 group-hover:scale-105"
-            />
-          </div>
-        </div>
-
+      {/* BADGES */}
+      <div className="mt-8 flex flex-wrap gap-4">
+        <span className="flex items-center gap-2 bg-white shadow px-4 py-2 rounded-xl text-sm text-gray-800">
+          <Rocket className="w-4 h-4 text-blue-600" />
+          Predictable Leads
+        </span>
+        <span className="flex items-center gap-2 bg-white shadow px-4 py-2 rounded-xl text-sm text-gray-800">
+          <Users className="w-4 h-4 text-blue-600" />
+          High-Intent Clients
+        </span>
+        <span className="flex items-center gap-2 bg-white shadow px-4 py-2 rounded-xl text-sm text-gray-800">
+          <Settings className="w-4 h-4 text-blue-600" />
+          Automated System
+        </span>
       </div>
+
+      {/* CTA */}
+      <button className="mt-10 bg-blue-600 hover:bg-blue-700 transition text-white px-10 py-4 rounded-xl font-semibold shadow-xl">
+        Get Free Access Today
+      </button>
+
+      <p className="mt-3 text-sm text-gray-600">
+        No credit card required
+      </p>
+
     </div>
-
-    {/* TRUST STRIP */}
-    <div className="mt-10 grid lg:grid-cols-2 gap-8">
-      <div className="bg-[#fafafa] rounded-2xl px-10 py-6">
-        <h3 className="text-2xl font-bold text-gray-900">Trusted by Advisors</h3>
-        <p className="text-gray-600 mt-1">
-          Helping insurance professionals grow consistently online
-        </p>
-      </div>
-
-      <div className="bg-[#fafafa] rounded-2xl px-10 py-6 flex items-center gap-4">
-        <Star className="w-6 h-6 text-yellow-500" />
-        <div>
-          <p className="text-lg font-semibold">Proven System</p>
-          <p className="text-gray-600">
-            Predictable leads • Less chasing • More closures
-          </p>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
+{/* TRUST STRIP */}
+<section className="bg-white px-6">
+  <div className="container mx-auto py-10 grid lg:grid-cols-2 gap-8">
+    <div className="bg-[#fafafa] rounded-2xl px-10 py-6">
+      <h3 className="text-2xl font-bold text-gray-900">
+        Trusted by Advisors
+      </h3>
+      <p className="text-gray-600 mt-1">
+        Helping insurance professionals grow consistently online
+      </p>
+    </div>
+
+    <div className="bg-[#fafafa] rounded-2xl px-10 py-6 flex items-center gap-4">
+      <Star className="w-6 h-6 text-yellow-500" />
+      <div>
+        <p className="text-lg font-semibold">Proven System</p>
+        <p className="text-gray-600">
+          Predictable leads • Less chasing • More closures
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
