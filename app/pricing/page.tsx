@@ -115,9 +115,14 @@ export default function Pricing() {
                       {plan.name}
                     </h3>
                     <div className="mb-6">
-                      <span className="text-5xl md:text-6xl font-extrabold text-gray-900">
-                        {plan.price}
-                      </span>
+                     
+                        <p className="text-5xl md:text-6xl font-extrabold text-gray-900">
+                          Free
+                        </p>
+                        <p className="text-xl text-gray-400 line-through">
+                          {plan.price}
+                        </p>
+                     
                     </div>
                     <p className="text-gray-600 font-medium">
                       {plan.name === 'Starter' && 'Perfect for getting started'}
@@ -177,20 +182,20 @@ export default function Pricing() {
                     <th className="text-center py-6 px-6 font-bold text-gray-900 border-b-2 border-blue-200">
                       <div className="flex flex-col items-center">
                         <span className="text-lg">Starter</span>
-                        <span className="text-sm font-normal text-gray-600">₹2,999</span>
+                        <span className="text-sm font-normal text-gray-600">Free</span>
                       </div>
                     </th>
                     <th className="text-center py-6 px-6 font-bold text-blue-600 border-b-2 border-blue-200 bg-blue-50">
                       <div className="flex flex-col items-center">
                         <span className="text-lg">Professional</span>
-                        <span className="text-sm font-normal text-blue-600">₹9,999</span>
+                        <span className="text-sm font-normal text-blue-600">Free</span>
                         <span className="text-xs bg-blue-600 text-white px-2 py-1 rounded-full mt-1">Popular</span>
                       </div>
                     </th>
                     <th className="text-center py-6 px-6 font-bold text-gray-900 rounded-tr-xl border-b-2 border-blue-200">
                       <div className="flex flex-col items-center">
-                        <span className="text-lg">Enterprise</span>
-                        <span className="text-sm font-normal text-gray-600">₹19,999</span>
+                        <span className="text-lg">Elite Mentorship</span>
+                        <span className="text-sm font-normal text-gray-600">Free</span>
                       </div>
                     </th>
                   </tr>

@@ -1,128 +1,143 @@
-import { Target, Monitor, Handshake, TrendingUp, MessageSquare, Trophy, Rocket, Eye } from 'lucide-react'
+import {
+  Target,
+  Monitor,
+  Handshake,
+  TrendingUp,
+  MessageSquare,
+  Trophy,
+  Rocket,
+  Eye
+} from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-20 md:py-32">
-      
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-orange-400/20 to-pink-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.1),transparent_50%)]" />
-      </div>
+    <section className="bg-[#f8fafc] py-20">
+      <div className="container mx-auto px-6">
 
-      <div className="relative container mx-auto px-6 flex flex-col-reverse lg:flex-row gap-16 items-center">
-        
-        {/* LEFT CONTENT */}
-        <div className="text-center lg:text-left space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm font-medium shadow-lg">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-            Now Enrolling New Batch
-          </div>
+        {/* MAIN HERO WRAPPER */}
+        <div className="relative rounded-[28px] bg-blue-900 text-white overflow-hidden">
 
-          {/* Main Heading */}
-          <h1 className="text-3xl md:text-5xl xl:text-7xl font-bold leading-tight">
-            <span className="bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 bg-clip-text text-transparent">
-              Financial Advisor & Insurance Agent
-            </span>
-            <br className="hidden md:inline"/>
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent font-extrabold">
-              {" "}Coaching in Jharkhand
-            </span>
-          </h1>
+          {/* subtle grid texture */}
+          <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:30px_30px]" />
 
-          {/* Subheading */}
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl leading-relaxed">
-            Learn How to 
-            <span className="font-bold text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
-              {" "}Get Clients Online Ethically
-            </span>
-            , Consistently & Without Cold Calling
-          </p>
+          <div className="relative grid lg:grid-cols-2 gap-20 p-14 items-center">
 
-          {/* Stats Pills */}
-          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md border border-gray-200">
-              <Target className="w-5 h-5 text-blue-600 mr-2" />
-              <span className="text-sm font-medium text-gray-700">Quality Clients</span>
+            {/* ================= LEFT CONTENT ================= */}
+            <div className="space-y-8 max-w-xl">
+
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium">
+                <span className="w-2 h-2 bg-emerald-400 rounded-full" />
+                Now Enrolling New Batch
+              </div>
+
+              {/* Heading */}
+              <h1 className=" md:text-4xl text-3xl xl:text-6xl font-semibold leading-tight">
+                Financial Advisor & Insurance Agent
+                <span className="block mt-2 font-bold">
+                  Coaching in Jharkhand
+                </span>
+              </h1>
+
+              {/* Subheading */}
+              <p className="text-lg text-white/80 leading-relaxed">
+                Learn how to get
+                <span className="font-semibold text-white">
+                  {" "}clients online ethically
+                </span>
+                , consistently & without cold calling.
+              </p>
+
+              {/* Pills */}
+              <div className="flex flex-wrap gap-3">
+                <Pill icon={Target} text="Quality Clients" />
+                <Pill icon={Monitor} text="Digital Systems" />
+                <Pill icon={Handshake} text="Ethical Approach" />
+              </div>
+
+              {/* CTA */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <a
+                  href="/apply"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-300 px-8 py-4 text-base font-semibold text-black hover:bg-emerald-300 transition"
+                >
+                  <Rocket className="w-5 h-5" />
+                  Join the Program
+                </a>
+
+                <a
+                  href="/courses"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 px-8 py-4 text-base font-semibold text-white/90 hover:bg-white/10 transition"
+                >
+                  <Eye className="w-5 h-5" />
+                  Free Preview
+                </a>
+              </div>
             </div>
-            <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md border border-gray-200">
-              <Monitor className="w-5 h-5 text-purple-600 mr-2" />
-              <span className="text-sm font-medium text-gray-700">Digital Systems</span>
-            </div>
-            <div className="flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md border border-gray-200">
-              <Handshake className="w-5 h-5 text-green-600 mr-2" />
-              <span className="text-sm font-medium text-gray-700">Ethical Approach</span>
-            </div>
-          </div>
 
-          {/* CTA BUTTONS */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a
-              href="/apply"
-              className="group relative inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 px-8 py-4 text-lg font-bold text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden"
-            >
-              <span className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              <span className="relative flex items-center gap-2">
-                <Rocket className="w-5 h-5" />
-                Join the Program
-              </span>
-            </a>
+            {/* ================= RIGHT BENTO ================= */}
+            <div className="grid grid-cols-2 gap-4">
 
-            <a
-              href="/courses"
-              className="group inline-flex items-center justify-center rounded-xl border-2 border-gray-300 bg-white/80 backdrop-blur-sm px-8 py-4 text-lg font-bold text-gray-700 hover:border-blue-500 hover:bg-blue-50 transition-all duration-300 hover:scale-105"
-            >
-              <Eye className="w-5 h-5 mr-2" />
-              Get Free Preview
-            </a>
-          </div>
+              {/* IMAGE */}
+              <div className="col-span-2 rounded-2xl overflow-hidden bg-white">
+                <img
+                  src="/hero-insurance-agent.png"
+                  alt="Insurance Agent Growth"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-          {/* Trust indicators */}
-          <div className="flex items-center gap-6 text-sm text-gray-500">
-            <div className="flex items-center">
-              <span className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-              <span>Limited Seats Available</span>
-            </div>
-            <div className="flex items-center">
-              <span className="text-lg mr-1">⭐</span>
-              <span>4.9/5 Rating</span>
-            </div>
-          </div>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="relative block">
-          {/* Main image with enhanced styling */}
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl"></div>
-            <div className="relative backdrop-blur-sm ">
-              <img
-                src="/hero-insurance-agent.png"
-                alt="Insurance Agent Growth"
-                className="rounded-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
+              {/* STATS */}
+              <Stat
+                icon={TrendingUp}
+                title="300% Growth"
+                desc="avg client results"
               />
+
+              <Stat
+                icon={MessageSquare}
+                title="50+ Leads"
+                desc="every month"
+              />
+
+              {/* TRUST TILE */}
+              <div className="col-span-2 rounded-2xl bg-white p-6 text-gray-900">
+                <div className="flex items-center gap-4">
+                  <Trophy className="w-7 h-7 text-blue-300" />
+                  <div>
+                    <p className="font-semibold">Proven Coaching System</p>
+                    <p className="text-sm text-gray-600">
+                      Designed for insurance professionals
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
-          </div>
-
-          {/* Floating stat cards with animations */}
-          <div className="absolute -top-4 -left-4 bg-white rounded-xl text-gray-500 shadow-xl px-4 py-3 text-sm font-bold border border-gray-100 animate-bounce">
-            <TrendingUp className="w-4 h-4 text-blue-600 inline mr-1" /> 300% Growth
-          </div>
-
-          <div className="absolute top-1/2 -right-4 bg-white rounded-xl text-gray-500 shadow-xl px-4 py-3 text-sm font-bold border border-gray-100 animate-pulse delay-500">
-            <MessageSquare className="w-4 h-4 text-green-600 inline mr-1" /> 50+ Leads/Month
-          </div>
-
-          <div className="absolute -bottom-4 left-1/4 bg-white rounded-xl text-gray-500 shadow-xl px-4 py-3 text-sm font-bold border border-gray-100 animate-bounce delay-1000">
-            <Trophy className="w-4 h-4 text-purple-600 inline mr-1" /> Proven System
           </div>
         </div>
       </div>
-
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
     </section>
+  );
+}
+
+/* ================= COMPONENTS ================= */
+
+function Pill({ icon: Icon, text }: any) {
+  return (
+    <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm">
+      <Icon className="w-4 h-4 text-blue-300" />
+      <span className="text-white/90">{text}</span>
+    </div>
+  );
+}
+
+function Stat({ icon: Icon, title, desc }: any) {
+  return (
+    <div className="rounded-2xl bg-white p-6 text-gray-900">
+      <Icon className="w-6 h-6 mb-2 text-blue-300" />
+      <p className="text-xl font-semibold">{title}</p>
+      <p className="text-sm text-gray-600">{desc}</p>
+    </div>
   );
 }

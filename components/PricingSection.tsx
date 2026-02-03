@@ -24,10 +24,14 @@ export default function PricingSection() {
             <p className="text-gray-500 mb-6">
               Perfect to get started online
             </p>
-
-            <p className="text-4xl font-extrabold text-gray-900 mb-8">
-              ₹2,999
-            </p>
+            <div className="flex items-baseline justify-center gap-2 mb-8">
+              <span className="text-4xl font-medium text-gray-900">
+                Free
+              </span>
+              <span className="text-xl text-gray-400 line-through">
+                ₹2,999
+              </span>
+            </div>
 
             <ul className="space-y-4 mb-10">
               {[
@@ -67,10 +71,14 @@ export default function PricingSection() {
             <p className="text-gray-500 mb-6">
               Best for serious growth
             </p>
-
-            <p className="text-4xl font-extrabold text-gray-900 mb-8">
-              ₹7,999
-            </p>
+            <div className="flex items-baseline justify-center gap-2 mb-8">
+              <span className="text-4xl font-medium text-gray-900">
+                Free
+              </span>
+              <span className="text-xl text-gray-400 line-through">
+                ₹7,999
+              </span>
+            </div>
 
             <ul className="space-y-4 mb-10">
               {[
@@ -105,10 +113,14 @@ export default function PricingSection() {
             <p className="text-gray-500 mb-6">
               Personal guidance & fast results
             </p>
-
-            <p className="text-4xl font-extrabold text-gray-900 mb-8">
-              ₹24,999
-            </p>
+            <div className="flex items-baseline justify-center gap-2 mb-8">
+              <span className="text-4xl font-medium text-gray-900">
+                Free
+              </span>
+              <span className="text-xl text-gray-400 line-through">
+                ₹24,999
+              </span>
+            </div>
 
             <ul className="space-y-4 mb-10">
               {[
