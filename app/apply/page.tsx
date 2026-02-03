@@ -81,14 +81,13 @@ export default function Page() {
         </div>
 
         {/* RIGHT IMAGE CARD */}
-        <div className="relative max-w-md mx-auto lg:mx-0">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
+        <div className="relative lg:mx-0">
+          <div className="relative rounded-3xl overflow-hidden  group">
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+              src="/hero-insurance-agent.png"
               alt="Advisor working online"
               className="w-full h-full object-cover transition duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-black/25" />
           </div>
         </div>
 
