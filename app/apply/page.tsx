@@ -1,3 +1,5 @@
+import { Rocket, Handshake, Settings, Star, TrendingUp, Users, Target, Zap } from 'lucide-react'
+
 const testimonials = [
   {
     name: "Ramesh K.",
@@ -26,38 +28,98 @@ export default function Page() {
   return (
     <main className="bg-[#F7FAFC] leading-relaxed text-[#1A365D]">
 
-      {/* ================= HERO ================= */}
-      <section className="bg-white">
-        <div className="container mx-auto px-6 py-28 grid lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <span className="inline-block mb-4 px-4 py-1 rounded-full text-sm font-medium bg-orange-100 text-[#F6871F]">
-              For Insurance & Financial Advisors
+{/* ================= LONG BENTO HERO ================= */}
+<section className="bg-white px-6">
+  <div className="container mx-auto py-20">
+    <div className="relative overflow-hidden rounded-[32px] bg-blue-900  px-14 py-16">
+
+      {/* GRID BACKGROUND */}
+      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#ffffff22_1px,transparent_1px),linear-gradient(to_bottom,#ffffff22_1px,transparent_1px)] bg-[size:48px_48px]" />
+
+      <div className="relative grid lg:grid-cols-2 gap-16 items-center">
+
+        {/* LEFT CONTENT — YOUR COPY */}
+        <div>
+          <span className="inline-block mb-6 px-5 py-2 rounded-full text-sm font-medium bg-white/10 text-blue-300">
+            For Insurance & Financial Advisors
+          </span>
+
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-white leading-tight">
+            Stop Knocking. <br />
+            <span className="text-blue-400">Start Scaling.</span>
+          </h1>
+
+          <p className="mt-6 text-lg text-gray-300 max-w-xl">
+            Replace door-to-door selling with a predictable online system
+            that brings serious, ready-to-buy clients — on autopilot.
+          </p>
+
+          {/* BADGES (same layout, neutral info style) */}
+          <div className="mt-8 flex flex-wrap gap-4">
+            <span className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-xl text-sm">
+              <Rocket className="w-4 h-4" />
+              Predictable Leads
             </span>
-
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Stop Knocking. <br />
-              <span className="text-[#F6871F]">Start Scaling.</span>
-            </h1>
-
-            <p className="mt-6 text-lg text-gray-600 max-w-xl">
-              Replace door-to-door selling with a predictable online system
-              that brings serious, ready-to-buy clients.
-            </p>
-
-            <button className="mt-8 bg-[#F6871F] hover:bg-orange-600 transition text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-orange-200">
-              Get Free Access Today
-            </button>
+            <span className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-xl text-sm">
+              <Users className="w-4 h-4" />
+              High-Intent Clients
+            </span>
+            <span className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-xl text-sm">
+              <Settings className="w-4 h-4" />
+              Automated System
+            </span>
           </div>
 
-          <div className="hidden lg:block">
+          {/* CTA */}
+          <button className="mt-10 bg-blue-500 hover:bg-blue-600 transition text-white px-10 py-4 rounded-xl font-semibold shadow-xl">
+            Get Free Access Today
+          </button>
+
+          <p className="mt-3 text-sm text-gray-400">
+            No credit card required
+          </p>
+        </div>
+
+        {/* RIGHT IMAGE CARD */}
+        <div className="relative max-w-md mx-auto lg:mx-0">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-              className="rounded-3xl shadow-xl"
               alt="Advisor working online"
+              className="w-full h-full object-cover transition duration-700 group-hover:scale-105"
             />
+            <div className="absolute inset-0 bg-black/25" />
           </div>
         </div>
-      </section>
+
+      </div>
+    </div>
+
+    {/* TRUST STRIP */}
+    <div className="mt-10 grid lg:grid-cols-2 gap-8">
+      <div className="bg-[#fafafa] rounded-2xl px-10 py-6">
+        <h3 className="text-2xl font-bold text-gray-900">Trusted by Advisors</h3>
+        <p className="text-gray-600 mt-1">
+          Helping insurance professionals grow consistently online
+        </p>
+      </div>
+
+      <div className="bg-[#fafafa] rounded-2xl px-10 py-6 flex items-center gap-4">
+        <Star className="w-6 h-6 text-yellow-500" />
+        <div>
+          <p className="text-lg font-semibold">Proven System</p>
+          <p className="text-gray-600">
+            Predictable leads • Less chasing • More closures
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
 
       {/* ================= PAIN ================= */}
       <section>
